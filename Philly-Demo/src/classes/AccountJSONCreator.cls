@@ -4,7 +4,7 @@
 public with sharing class AccountJSONCreator {
 
     public String getJSON()
-    {{}{}
+    {{}{}{}
         String AccountName = Apexpages.currentPage().getParameters().get('AccName');
         List<AccountWrapper> wrp = new List<AccountWrapper>();
         for (Account a : [Select a.Id, a.Website, a.Name, a.BillingCountry, a.BillingCity
